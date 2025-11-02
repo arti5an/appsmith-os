@@ -1,4 +1,4 @@
-export image_name := env("IMAGE_NAME", "appsmith-os") # output image name, usually same as repo name, change as needed
+export image_name := env("IMAGE_NAME", "image-template") # output image name, usually same as repo name, change as needed
 export default_tag := env("DEFAULT_TAG", "latest")
 export bib_image := env("BIB_IMAGE", "quay.io/centos-bootc/bootc-image-builder:latest")
 
@@ -15,8 +15,8 @@ default:
 check:
     #!/usr/bin/bash
     find . -type f -name "*.just" | while read -r file; do
-        echo "Checking syntax: $file"
-        just --unstable --fmt --check -f $file
+    	echo "Checking syntax: $file"
+    	just --unstable --fmt --check -f $file
     done
     echo "Checking syntax: Justfile"
     just --unstable --fmt --check -f Justfile
@@ -26,8 +26,8 @@ check:
 fix:
     #!/usr/bin/bash
     find . -type f -name "*.just" | while read -r file; do
-        echo "Checking syntax: $file"
-        just --unstable --fmt -f $file
+    	echo "Checking syntax: $file"
+    	just --unstable --fmt -f $file
     done
     echo "Checking syntax: Justfile"
     just --unstable --fmt -f Justfile || { exit 1; }
