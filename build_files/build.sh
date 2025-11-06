@@ -33,5 +33,5 @@ dnf5 -y copr disable avengemedia/danklinux
 
 #### Example for enabling a System Unit File
 
-systemctl disable gdm.service
-systemctl enable greetd.service
+# systemctl disable gdm.service
+# systemctl enable greetd.service
