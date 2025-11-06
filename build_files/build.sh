@@ -9,8 +9,9 @@ set -ouex pipefail
 # List of rpmfusion packages can be found here:
 # https://mirrors.rpmfusion.org/mirrorlist?path=free/fedora/updates/39/x86_64/repoview/index.html&protocol=https&redirect=1
 
-# this installs a package from fedora repos
-dnf5 install -y fscrypt gwenview niri okular qutebrowser switchdesk tmux
+dnf5 install -y libffi-devel libyaml-devel openssl-devel \
+  chafa flac fscrypt fuse-sshfs fuse-zip sshfs tealdeer tmux vifm \
+  gwenview niri okular qutebrowser
 
 # Use a COPR Example:
 #
