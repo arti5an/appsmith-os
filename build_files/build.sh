@@ -9,7 +9,7 @@ set -ouex pipefail
 # List of rpmfusion packages can be found here:
 # https://mirrors.rpmfusion.org/mirrorlist?path=free/fedora/updates/43/x86_64/repoview/index.html&protocol=https&redirect=1
 
-dnf5 install -y libffi-devel libyaml-devel mate-polkit \
+dnf5 install -y libffi libicu74 libjpeg-turbo libyaml mate-polkit \
   chafa flac fscrypt fuse-sshfs fuse-zip sshfs vifm \
   gwenview mako niri okular qutebrowser
 
