@@ -11,7 +11,7 @@ set -ouex pipefail
 
 dnf5 install -y libffi-devel libicu74 libjpeg-turbo-devel libyaml-devel mate-polkit \
   chafa flac fscrypt fuse-sshfs fuse-zip sshfs vifm \
-  gwenview mako niri okular qutebrowser
+  gwenview mako okular qutebrowser
 
 # Ghostty - https://ghostty.org/
 dnf5 -y copr enable scottames/ghostty
@@ -25,7 +25,7 @@ dnf5 -y copr disable varlad/zellij
 
 # DankMaterialShell - https://danklinux.com/
 dnf5 -y copr enable avengemedia/dms
-dnf5 -y install dms dms-greeter
+dnf5 -y install dms dms-greeter niri
 dnf5 -y copr disable avengemedia/dms
 dnf5 -y copr enable avengemedia/danklinux
 dnf5 -y install dgop dsearch
