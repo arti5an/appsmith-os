@@ -36,7 +36,6 @@ dnf5 -y copr enable avengemedia/danklinux
 dnf5 -y install dgop dsearch
 dnf5 -y copr disable avengemedia/danklinux
 
-#### Example for enabling a System Unit File
-
-# systemctl disable gdm.service
-# systemctl enable greetd.service
+# Swap gnome greeter for DankGreeter
+systemctl disable gdm.service
+systemctl enable greetd.service
