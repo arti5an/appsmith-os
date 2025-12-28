@@ -22,20 +22,3 @@ dnf5 -y copr disable scottames/ghostty
 dnf5 -y copr enable varlad/zellij
 dnf5 -y install zellij
 dnf5 -y copr disable varlad/zellij
-
-# Niri
-dnf5 -y copr enable yalter/niri
-dnf5 -y install niri
-dnf5 -y copr disable yalter/niri
-
-# DankMaterialShell - https://danklinux.com/
-dnf5 -y copr enable avengemedia/dms
-dnf5 -y install dms dms-greeter
-dnf5 -y copr disable avengemedia/dms
-dnf5 -y copr enable avengemedia/danklinux
-dnf5 -y install dgop dsearch
-dnf5 -y copr disable avengemedia/danklinux
-
-# Swap gnome greeter for DankGreeter
-systemctl disable gdm.service
-systemctl enable greetd.service
