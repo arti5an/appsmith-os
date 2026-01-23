@@ -10,7 +10,8 @@ set -ouex pipefail
 # https://mirrors.rpmfusion.org/mirrorlist?path=free/fedora/updates/43/x86_64/repoview/index.html&protocol=https&redirect=1
 
 dnf5 install -y libffi-devel libicu74 libjpeg-turbo-devel libyaml-devel \
-  chafa flac fscrypt fuse-sshfs fuse-zip sshfs vifm qutebrowser
+  chafa flac fscrypt fuse-sshfs fuse-zip sshfs vifm \
+  gwenview okular qutebrowser
 
 # Ghostty - https://ghostty.org/
 dnf5 -y copr enable scottames/ghostty
