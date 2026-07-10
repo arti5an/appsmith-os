@@ -65,7 +65,7 @@ echo "Display manager configured"
 # https://mirrors.rpmfusion.org/mirrorlist?path=free/fedora/updates/43/x86_64/repoview/index.html&protocol=https&redirect=1
 
 # packages from fedora repos
-dnf5 install -y libffi-devel libicu74 libjpeg-turbo-devel libyaml-devel openssl-devel \
+dnf5 install -y libffi-devel libicu-devel libjpeg-turbo-devel libyaml-devel openssl-devel \
   kitty flatpak xdg-desktop-portal-cosmic \
   chafa flac fscrypt fuse-sshfs fuse-zip imv mpv sshfs tmux vifm \
   gwenview okular qutebrowser
